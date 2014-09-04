@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nineoldandroids-2.4.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../LockScreenApp-master/LockScreenApp-master/LockScreenApp/libs/nineoldandroids-2.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -98,4 +98,7 @@
     <feature name="missedcomm">
         <param name="android-package" value="com.awaa.missedcomm.missedcomm" />
     </feature>
+    <feature name="KeepScreenOn">
+        <param name="android-package" value="com.awaa.mikeyalder.KeepScreenOn" />
+    </feature>
 </widget>
