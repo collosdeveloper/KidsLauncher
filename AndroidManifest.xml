@@ -13,7 +13,7 @@
                       android:smallScreens="true"
                       android:xlargeScreens="true"/>
 
-    <uses-sdk android:minSdkVersion="14"
+    <uses-sdk android:minSdkVersion="8"
               android:targetSdkVersion="19"/>
 
     <application android:hardwareAccelerated="true"
@@ -30,6 +30,7 @@
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.HOME"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
@@ -40,17 +41,18 @@
                   android:screenOrientation="portrait"
                   android:name="LockActivity"
                 >
-            <intent-filter >
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
         </activity>
 
-        <service android:name="com.lockscreen.MyService" />
+        <service android:name="locker.lockscreen.MyService" />
 
         <receiver
                 android:enabled="true"
-                android:name="receiver.lockScreenReeiver" >
+                android:name="locker.receiver.lockScreenReeiver" >
             <intent-filter >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
 

@@ -1,4 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
     <string name="app_name">Kids Launcher</string>
+
+    <string name="hello">Hello World, LockScreenAppActivity!</string>
+    <string name="unloack">Unlock</string>
+    <color name="mycolor1">#F5DC49</color>
 </resources>

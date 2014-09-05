@@ -14,7 +14,7 @@
     <orderEntry type="jdk" jdkName="Android SDK" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="CordovaLib" />
-    <orderEntry type="module" module-name="LockScreenApp" />
+    <orderEntry type="library" name="nineoldandroids-2.4.0" level="project" />
   </component>
 </module>
 

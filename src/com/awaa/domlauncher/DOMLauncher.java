@@ -19,7 +19,11 @@
 
 package com.awaa.domlauncher;
 
+import android.app.ActivityManager;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import locker.lockscreen.MyService;
 import org.apache.cordova.*;
 
 import java.io.File;
@@ -42,6 +46,12 @@ public class DOMLauncher extends CordovaActivity{
         super.clearCache();      
         super.appView.getSettings().setAppCacheEnabled(false); 
         super.appView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+
+        // initialize receiver
+        if(!isMyServiceRunning(MyService.class)) {
+            Log.d(TAG, "Service Start");
+            startService(new Intent(this, MyService.class));
+        }
         
 		File sdcard = Environment.getExternalStorageDirectory();
         File appDir = new File(sdcard+"/DOMLauncher");
@@ -65,6 +75,17 @@ public class DOMLauncher extends CordovaActivity{
             super.loadUrl(Config.getStartUrl()); 
         }
     }
+
+    private boolean isMyServiceRunning(Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private String getActive() {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
         if (sharedPrefs.contains("active")) {

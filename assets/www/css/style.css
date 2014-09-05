@@ -112,8 +112,8 @@ h2 a, h3 a, a img, .app{text-decoration:none; border:none;}
 .logo img{width:125px; height:125px; margin-top:15px; margin-right:auto; margin-left:auto; display:block;}
 
 .title{font-size:425%; position:absolute; top:15px; left:120px;}
-.title:before, .menu  a:before, .menu h3:before{content:"<";}
-.title:after, .menu  a:after, .menu h3:after{content:">";}
+.title:before, .menu  a:before, .menu h3:before{content:"";}
+.title:after, .menu  a:after, .menu h3:after{content:"";}
 
 .header .menu{position:absolute; bottom:0px; left:142px; right:0px;}
 .header .menu li{float:left; padding-left: 0px; margin-right:25px;}
@@ -190,8 +190,8 @@ h2 a, h3 a, a img, .app{text-decoration:none; border:none;}
 
 /* Checkbox Widget */
 .chkbx{font-size: 150%; text-align:center; display:flex; flex-direction:row; align-items: center; position:relative;}
-.chkbx:before{content:'<'; display:block; flex:1;}
-.chkbx:after{content:'>'; display:block; flex:1;}
+.chkbx:before{content:''; display:block; flex:1;}
+.chkbx:after{content:''; display:block; flex:1;}
 .chkbx div{} 
 .chkbx div:before{content:'off'; display:block; text-align:center;}
 .chkbx input{display:none;}
@@ -205,8 +205,8 @@ h2 a, h3 a, a img, .app{text-decoration:none; border:none;}
 .radio input{display:none;}
 .radio div{display:flex; flex-direction:row; align-items: center; opacity:.5} 
 .radio div:before, .radio div:after{visibility: hidden; display:block; flex:1;}
-.radio div:before{content:'<'; }
-.radio div:after{content:'>'; }
+.radio div:before{content:''; }
+.radio div:after{content:''; }
 .radio input:checked + div{ opacity:1;}
 .radio input:checked + div:before, .radio input:checked + div:after{visibility:visible; }
 

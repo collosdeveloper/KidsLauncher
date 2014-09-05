@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Touch handle for the GlowPadView widget on the incoming call screen -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:state_enabled="true"
+        android:state_active="false"
+        android:state_focused="false"
+        android:drawable="@drawable/kay" />
+
+    <!-- "Pressed" state uses the same simple "ring" image as on the lockscreen -->
+    <item
+        android:state_enabled="true"
+        android:state_active="true"
+        android:state_focused="false"
+        android:drawable="@drawable/ic_lockscreen_handle_pressed" />
+
+</selector>
