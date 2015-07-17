@@ -13,3 +13,5 @@ Need to add https://github.com/collosdeveloper/AndroidLockingApps module for ful
 
 
 ![alt tag](https://pp.vk.me/c618628/v618628839/99e1/Fjy-p_J8F3M.jpg)
+
+![alt tag](https://pp.vk.me/c624716/v624716717/3ad2d/ToCM0utgid0.jpg)
